@@ -1,13 +1,96 @@
+@import "./assets/styles/header.css";
+@import "./assets/styles/button.css";
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+@import "bootstrap-icons/font/bootstrap-icons.css";
+@import "./assets/styles/slider.css";
+@import "./assets/styles/teambox.css";
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: Poppins;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: white;
+  font-size: 20px;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+:root {
+  --primary-color: #4821c8;
+  --background-color-1: #101013;
+  --background-color-2: #19191c;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-dark {
+  background: black;
+}
+
+.bg-dark1 {
+  background: var(--background-color-1);
+}
+
+.bg-dark2 {
+  background: var(--background-color-2);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+h1 {
+  font-size: 60px;
+  line-height: 90px;
+  font-weight: 600;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 60px;
+}
+
+p {
+  font-size: 20px;
+  line-height: 40px;
+}
+
+.hero-text {
+  line-height: 30px;
+}
+
+.section {
+  padding: 140px 0;
+}
+
+.section-pad-top {
+  padding-top: 140px;
+}
+
+.rounded-20 {
+  border-radius: 20px;
+}
+
+.rounded-top-20 {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.rounded-bottom-20 {
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
 }

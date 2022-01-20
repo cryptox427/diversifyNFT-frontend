@@ -1,0 +1,26 @@
+.navbar {
+  background: var(--background-color-1) !important;
+}
+
+.nav-item {
+  padding: 0 24px;
+}
+
+.nav-link {
+  font-size: 18px;
+  color: white !important;
+}
+
+.nav-link.active {
+  border-bottom: 2px solid var(--primary-color);
+}
+
+.social-icon {
+  background: var(--background-color-2);
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 8px;
+}

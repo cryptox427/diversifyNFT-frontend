@@ -1,0 +1,11 @@
+.team-box {
+  position: relative;
+  padding-bottom: 100px !important;
+}
+
+.team-description {
+  position: absolute;
+  background: #404040;
+  width: 100%;
+  min-height: 165px;
+}
