@@ -5,6 +5,7 @@
 @import "bootstrap-icons/font/bootstrap-icons.css";
 @import "./assets/styles/slider.css";
 @import "./assets/styles/teambox.css";
+@import "./assets/styles/scrollbar.css";
 
 body {
   margin: 0;

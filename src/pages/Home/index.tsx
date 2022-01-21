@@ -106,13 +106,12 @@ const Home = () => {
               <Box cssClasses={["col-md-5", "col-12"]}></Box>
             </Flex>
           </Box>
-
-          <Image
+          {/* <Image
             cssClasses={["d-md-block", "d-none"]}
             width="auto"
             height="auto"
             src={GroupImage}
-          />
+          /> */}
         </div>
       </Box>
       <Box cssClasses={["bg-dark2", "section"]}>
