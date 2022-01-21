@@ -3,7 +3,7 @@ import Image from "./common/Image";
 
 const Team = ({ team }: { team: any }) => {
   return (
-    <Box cssClasses={["col-md-4", "container"]}>
+    <Box cssClasses={["col-md-4", "container", "col-12", "team-box-container"]}>
       <Box cssClasses={["p-4", "rounded-20"]} background="#000">
         <Box cssClasses={["team-box"]}>
           <Image

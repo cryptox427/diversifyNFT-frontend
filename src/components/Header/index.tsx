@@ -1,10 +1,11 @@
-import { useState } from "react";
+import { Link } from "react-scroll";
 import TelegramImage from "../../assets/icons/telegram.png";
 import GithubImage from "../../assets/icons/github.png";
 import InstagramImage from "../../assets/icons/instagram.png";
 import TwitterImage from "../../assets/icons/twitter.png";
 import FacebookImage from "../../assets/icons/facebook.png";
 import SocialIcon from "../common/SocialIcon";
+import useNav from "../../hooks/useNav";
 
 const Navbar = () => {
   const navs = [
@@ -24,45 +25,41 @@ const Navbar = () => {
     { icon: FacebookImage, link: "" },
   ];
 
-  const [activeNav, setActiveNav] = useState<string>("home");
+  const [navbarOpen] = useNav(false);
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark  navbar-fixed-top">
-      <div className="container py-3">
-        <a className="navbar-brand" href="/">
+    <nav
+      id="header"
+      className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top"
+    >
+      <div className="container py-1 py-lg-3">
+        <Link to="home" className="navbar-brand pointer" spy={true}>
           Logo
-        </a>
+        </Link>
         <button
           className="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
+          data-bs-target="#navbarContent"
         >
           <span className="navbar-toggler-icon"></span>
         </button>
-        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+        <div className="collapse navbar-collapse" id="navbarContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             {navs.map((nav, index) => (
               <li key={index} className="nav-item">
-                <a
-                  onClick={() => setActiveNav(nav.link)}
-                  className={
-                    activeNav === nav.link
-                      ? "nav-link white px-0 py-2 active"
-                      : "nav-link white px-0 py-2"
-                  }
-                  aria-current="page"
-                  href={`#${nav.link}`}
+                <Link
+                  activeClass="active"
+                  className="nav-link white px-0 py-2 pointer"
+                  to={nav.link}
+                  spy={true}
                 >
                   {nav.menu}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>
-          <ul className="navbar-nav">
+          <ul className="navbar-nav social-icons">
             {socialIcons.map((icon, index) => (
               <li key={index}>
                 <SocialIcon link={icon.link} img={icon.icon} />

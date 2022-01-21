@@ -1,8 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Popper from "@popperjs/core";
-import "bootstrap/dist/js/bootstrap.bundle.min";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import Layout from "./components/Layout";
 import "./index.css";

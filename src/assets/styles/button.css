@@ -9,7 +9,7 @@
 }
 
 button {
-  outline: none;
+  /* outline: none; */
   cursor: pointer;
 }
 
@@ -17,4 +17,12 @@ button {
   color: white;
   padding: 20px 30px;
   min-width: 240px;
+}
+
+@media (max-width: 991px) {
+  .custom-btn {
+    padding: 10px 15px;
+    min-width: 120px;
+    font-size: 12px;
+  }
 }

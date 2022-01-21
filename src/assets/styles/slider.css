@@ -32,3 +32,22 @@
 .slick-next:focus {
   background: #252527;
 }
+
+@media (max-width: 991px) {
+  .slider-arrow {
+    width: 40px;
+    height: 40px;
+  }
+
+  .slider-arrow.slick-prev {
+    left: -10px;
+  }
+
+  .slider-arrow.slick-next {
+    right: -10px;
+  }
+
+  .slider-arrow > i {
+    font-size: 20px;
+  }
+}
