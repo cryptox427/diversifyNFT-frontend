@@ -1,22 +1,26 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { Route, Switch, BrowserRouter as Router } from "react-router-dom";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import Layout from "./components/Layout";
 import "./index.css";
 import Home from "./pages/Home";
+import Marketplace from "./pages/Marketplace";
+import About from "./pages/About";
+import Roadmap from "./pages/Roadmap";
 import reportWebVitals from "./reportWebVitals";
 
 ReactDOM.render(
   <React.StrictMode>
     <Router>
-      <Switch>
-        <Layout>
-          <Route path={"/"}>
-            <Home />
-          </Route>
-        </Layout>
-      </Switch>
+      <Layout>
+        <Switch>
+          <Route path="/roadmap" component={Roadmap} />
+          <Route path="/aboutus" component={About} />
+          <Route path="/marketplace" component={Marketplace} />
+          <Route path="/" component={Home} />
+        </Switch>
+      </Layout>
     </Router>
   </React.StrictMode>,
   document.getElementById("root")

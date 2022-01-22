@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Button from "../../components/common/Button";
 import Flex from "../../components/common/Flex";
 import GroupImage from "../../assets/images/group.png";
@@ -187,7 +188,9 @@ const Home = () => {
                   justifyContent="center"
                   alignItems="center"
                 >
-                  <Button secondary text="View Marketplace" />
+                  <Link to="/marketplace">
+                    <Button secondary text="View Marketplace" />
+                  </Link>
                 </Flex>
               </Box>
             </Box>
@@ -209,7 +212,9 @@ const Home = () => {
                 key in our organization.
               </p>
               <Box cssClasses={["mt-4"]}>
-                <Button secondary text="View Roadmap" />
+                <Link to="/roadmap">
+                  <Button secondary text="View Roadmap" />
+                </Link>
               </Box>
             </Box>
             <Box
@@ -250,7 +255,9 @@ const Home = () => {
             </Box>
             <Flex justifyContent="center" direction="row" alignItems="center">
               <Box cssClasses={["mt-4"]}>
-                <Button secondary text="View More" />
+                <Link to="/aboutus">
+                  <Button secondary text="View More" />
+                </Link>
               </Box>
             </Flex>
           </Box>

@@ -6,6 +6,7 @@
 @import "./assets/styles/slider.css";
 @import "./assets/styles/teambox.css";
 @import "./assets/styles/scrollbar.css";
+@import "./assets/styles/phase.css";
 
 body {
   margin: 0;
@@ -25,6 +26,7 @@ code {
   --primary-color: #4821c8;
   --background-color-1: #101013;
   --background-color-2: #19191c;
+  --background-color-3: #333335;
 }
 
 * {
@@ -41,6 +43,10 @@ code {
 
 .bg-dark2 {
   background: var(--background-color-2);
+}
+
+.bg-dark3 {
+  background: var(--background-color-3);
 }
 
 h1,
@@ -87,11 +93,11 @@ p.text-sm {
 }
 
 .section {
-  padding: 140px 0;
+  padding: 160px 0;
 }
 
 .section-pad-top {
-  padding-top: 140px;
+  padding-top: 160px;
 }
 
 .rounded-20 {
@@ -110,31 +116,31 @@ p.text-sm {
 
 @media (max-width: 991px) {
   body {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   h1 {
     font-size: 30px;
-    line-height: 40px;
+    line-height: 45px;
   }
 
   h2 {
     font-size: 24px;
-    line-height: 32px;
+    line-height: 40px;
   }
 
   h3 {
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 18px;
+    line-height: 30px;
   }
 
   p {
-    font-size: 14px;
-    line-height: 26px;
+    font-size: 16px;
+    line-height: 30px;
   }
 
   p.text-sm {
-    font-size: 12px;
+    font-size: 14px;
     line-height: 26px;
   }
 
@@ -148,5 +154,19 @@ p.text-sm {
 
   .section-pad-top {
     padding-top: 100px;
+  }
+
+  .rounded-20 {
+    border-radius: 10px;
+  }
+
+  .rounded-top-20 {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  .rounded-bottom-20 {
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
   }
 }

@@ -25,7 +25,7 @@ const useNav = (initialNavbarOpen: boolean) => {
       .call(header.querySelectorAll("a"))
       .forEach((link: HTMLAnchorElement) => {
         link.addEventListener("click", (e) => {
-          e.preventDefault();
+          // e.preventDefault();
 
           setNavbarOpen(false);
         });

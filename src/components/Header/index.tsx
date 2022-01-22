@@ -1,4 +1,4 @@
-import { Link } from "react-scroll";
+import { Link as ScrollLink } from "react-scroll";
 import TelegramImage from "../../assets/icons/telegram.png";
 import GithubImage from "../../assets/icons/github.png";
 import InstagramImage from "../../assets/icons/instagram.png";
@@ -6,6 +6,7 @@ import TwitterImage from "../../assets/icons/twitter.png";
 import FacebookImage from "../../assets/icons/facebook.png";
 import SocialIcon from "../common/SocialIcon";
 import useNav from "../../hooks/useNav";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const navs = [
@@ -33,7 +34,7 @@ const Navbar = () => {
       className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top"
     >
       <div className="container py-1 py-lg-3">
-        <Link to="home" className="navbar-brand pointer" spy={true}>
+        <Link to="/" className="navbar-brand pointer">
           Logo
         </Link>
         <button
@@ -48,14 +49,14 @@ const Navbar = () => {
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             {navs.map((nav, index) => (
               <li key={index} className="nav-item">
-                <Link
+                <ScrollLink
                   activeClass="active"
                   className="nav-link white px-0 py-2 pointer"
                   to={nav.link}
                   spy={true}
                 >
                   {nav.menu}
-                </Link>
+                </ScrollLink>
               </li>
             ))}
           </ul>
