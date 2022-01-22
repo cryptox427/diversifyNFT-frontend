@@ -1,5 +1,4 @@
 import Box from "./common/Box";
-import Flex from "./common/Flex";
 
 export interface RoadMapPhaseData {
   title: string;

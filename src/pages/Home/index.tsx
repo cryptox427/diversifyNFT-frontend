@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import Button from "../../components/common/Button";
 import Flex from "../../components/common/Flex";
-import GroupImage from "../../assets/images/group.png";
+// import GroupImage from "../../assets/images/group.png";
 import Image from "../../components/common/Image";
 import Box from "../../components/common/Box";
 import Slider from "react-slick";

@@ -7,6 +7,7 @@ import FacebookImage from "../../assets/icons/facebook.png";
 import SocialIcon from "../common/SocialIcon";
 import useNav from "../../hooks/useNav";
 import { Link } from "react-router-dom";
+import NavbarToggler from "./NavbatToggler";
 
 const Navbar = () => {
   const navs = [
@@ -38,12 +39,12 @@ const Navbar = () => {
           Logo
         </Link>
         <button
-          className="navbar-toggler"
+          className="navbar-toggler border-0 outline-none"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarContent"
         >
-          <span className="navbar-toggler-icon"></span>
+          <NavbarToggler navbarOpen={navbarOpen} />
         </button>
         <div className="collapse navbar-collapse" id="navbarContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">

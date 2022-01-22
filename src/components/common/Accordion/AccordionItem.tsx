@@ -7,7 +7,6 @@ import MuiAccordionSummary, {
   AccordionSummaryProps,
 } from "@mui/material/AccordionSummary";
 import MuiAccordionDetails from "@mui/material/AccordionDetails";
-import Typography from "@mui/material/Typography";
 import Flex from "../Flex";
 
 const Accordion = styled((props: AccordionProps) => (
