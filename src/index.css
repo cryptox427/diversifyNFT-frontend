@@ -80,6 +80,7 @@ h3 {
 p {
   font-size: 20px;
   line-height: 40px;
+  opacity: 0.7;
 }
 
 p.text-sm {
@@ -112,6 +113,16 @@ p.text-sm {
 .rounded-bottom-20 {
   border-bottom-right-radius: 20px;
   border-bottom-left-radius: 20px;
+}
+
+@media (min-width: 1366px) and (max-width: 1400px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
+    max-width: 1240px;
+  }
 }
 
 @media (max-width: 991px) {

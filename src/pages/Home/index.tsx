@@ -205,7 +205,7 @@ const Home = () => {
             direction="row"
             alignItems="center"
           >
-            <Box cssClasses={["col-md-7", "col-12"]}>
+            <Box cssClasses={["col-md-7", "col-12", "pe-md-4"]}>
               <h2>Roadmap</h2>
               <p className="hero-text mt-2">
                 Here’s a breakdown of our achievements, transparency is a major
