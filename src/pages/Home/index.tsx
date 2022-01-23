@@ -115,87 +115,94 @@ const Home = () => {
           /> */}
         </div>
       </Box>
-      <Box cssClasses={["bg-dark2", "section"]}>
-        <Box cssClasses={["container"]}>
-          <h1 className="text-sm-center">What is Diversify NFT</h1>
-          <Box cssClasses={["col-md-8", "mt-3", "mx-auto"]}>
-            <p className="text-sm-center">
-              Diversity NFTs is the purest form of Crystal Rings on the
-              metaverse, a brand built as a 'Token of Love' on the Ethereum
-              Network. Diversify NFTs will be the rare jewel in your collection
-              that provides proof of ownership and has unmatchable add-ons in
-              its category, making it a pioneer among its peers. Crystal Ring
-              360 videos are easily the most secure piece of jewelry on the Web
-              3.0.
-            </p>
-          </Box>
-          <h1 className="section-pad-top text-sm-center">
-            Collection for the Connoisseurs
-          </h1>
-          <Box cssClasses={["col-md-8", "mt-3", "mx-auto"]}>
-            <p className="text-sm-center">
-              DiversifyNFTs' Crystal Ring Stories are designed to dazzle the
-              special someone. They carry the allure, the exquisiteness, and the
-              magnificence. They are also giving the possibility of a tangible
-              form of artistry. Our idea of taking the NFT world forward is
-              through diversification while adding value to the buyers' lives.
-            </p>
-          </Box>
-          <Flex justifyContent="center" alignItems="center" direction="column">
-            <Box
-              cssClasses={[
-                "col-lg-9",
-                "col-md-10",
-                "mt-5",
-                "pt-5",
-                "container",
-              ]}
-            >
-              <Slider
-                {...{
-                  infinite: true,
-                  slidesToShow: 2,
-                  slidesToScroll: 1,
-                  arrows: true,
-                  nextArrow: <SliderArrow direction="next" />,
-                  prevArrow: <SliderArrow direction="prev" />,
-                  responsive: [
-                    {
-                      breakpoint: 768,
-                      settings: {
-                        slidesToShow: 1,
-                        dots: true,
-                      },
-                    },
-                  ],
-                }}
-              >
-                {slides.map((slide, index) => (
-                  <Box key={index} cssClasses={["container"]}>
-                    <Image
-                      src={slide.img}
-                      width="100%"
-                      height="500px"
-                      cssClasses={["rounded"]}
-                    />
-                  </Box>
-                ))}
-              </Slider>
-              <Box cssClasses={["mt-4"]}>
-                <Flex
-                  cssClasses={["pt-4"]}
-                  direction="row"
-                  justifyContent="center"
-                  alignItems="center"
-                >
-                  <Link to="/marketplace">
-                    <Button secondary text="View Marketplace" />
-                  </Link>
-                </Flex>
-              </Box>
+      <Box cssClasses={["bg-dark2"]}>
+        <div id="art" className="section">
+          <Box cssClasses={["container"]}>
+            <h1 className="text-sm-center">What is Diversify NFT</h1>
+            <Box cssClasses={["col-md-8", "mt-3", "mx-auto"]}>
+              <p className="text-sm-center">
+                Diversity NFTs is the purest form of Crystal Rings on the
+                metaverse, a brand built as a 'Token of Love' on the Ethereum
+                Network. Diversify NFTs will be the rare jewel in your
+                collection that provides proof of ownership and has unmatchable
+                add-ons in its category, making it a pioneer among its peers.
+                Crystal Ring 360 videos are easily the most secure piece of
+                jewelry on the Web 3.0.
+              </p>
             </Box>
-          </Flex>
-        </Box>
+            <h1 className="section-pad-top text-sm-center">
+              Collection for the Connoisseurs
+            </h1>
+            <Box cssClasses={["col-md-8", "mt-3", "mx-auto"]}>
+              <p className="text-sm-center">
+                DiversifyNFTs' Crystal Ring Stories are designed to dazzle the
+                special someone. They carry the allure, the exquisiteness, and
+                the magnificence. They are also giving the possibility of a
+                tangible form of artistry. Our idea of taking the NFT world
+                forward is through diversification while adding value to the
+                buyers' lives.
+              </p>
+            </Box>
+            <Flex
+              justifyContent="center"
+              alignItems="center"
+              direction="column"
+            >
+              <Box
+                cssClasses={[
+                  "col-lg-9",
+                  "col-md-10",
+                  "mt-5",
+                  "pt-5",
+                  "container",
+                ]}
+              >
+                <Slider
+                  {...{
+                    infinite: true,
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    arrows: true,
+                    nextArrow: <SliderArrow direction="next" />,
+                    prevArrow: <SliderArrow direction="prev" />,
+                    responsive: [
+                      {
+                        breakpoint: 768,
+                        settings: {
+                          slidesToShow: 1,
+                          dots: true,
+                        },
+                      },
+                    ],
+                  }}
+                >
+                  {slides.map((slide, index) => (
+                    <Box key={index} cssClasses={["container"]}>
+                      <Image
+                        src={slide.img}
+                        width="100%"
+                        height="500px"
+                        cssClasses={["rounded"]}
+                      />
+                    </Box>
+                  ))}
+                </Slider>
+                <Box cssClasses={["mt-4"]}>
+                  <Flex
+                    cssClasses={["pt-4"]}
+                    direction="row"
+                    justifyContent="center"
+                    alignItems="center"
+                  >
+                    <Link to="/marketplace">
+                      <Button secondary text="View Marketplace" />
+                    </Link>
+                  </Flex>
+                </Box>
+              </Box>
+            </Flex>
+          </Box>
+        </div>
       </Box>
       <Box cssClasses={["bg-dark1"]}>
         <div id="roadmap" className="section-pad-top">
