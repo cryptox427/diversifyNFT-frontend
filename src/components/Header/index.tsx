@@ -39,7 +39,7 @@ const Navbar = () => {
           Logo
         </Link>
         <button
-          className="navbar-toggler border-0 outline-none"
+          className="navbar-toggler border-0 outline-none p-0"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarContent"
