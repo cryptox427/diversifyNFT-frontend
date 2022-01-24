@@ -5,46 +5,48 @@ import Flex from "../../components/common/Flex";
 import Image from "../../components/common/Image";
 import Box from "../../components/common/Box";
 import Slider from "react-slick";
-import TestImage from "../../assets/images/Image.png";
 import SliderArrow from "../../components/common/SliderArrow";
 import RoadMapImage from "../../assets/images/roadmap.png";
 import Team from "../../components/Team";
 import Blog from "../../components/Blog";
 import Accordion from "../../components/common/Accordion";
+import BlogImage1 from "../../assets/images/blog1.png";
+import BlogImage2 from "../../assets/images/blog2.png";
+import BlogImage3 from "../../assets/images/blog3.png";
+import TeamImage1 from "../../assets/images/team1.png";
+import TeamImage2 from "../../assets/images/team2.png";
+import TeamImage3 from "../../assets/images/team3.png";
+import LogoImage from "../../assets/images/logo.png";
+import Art1 from "../../assets/images/art1.png";
+import Art2 from "../../assets/images/art2.png";
+import Art from "../../components/Art";
 
 const Home = () => {
-  const slides = [
-    { img: TestImage },
-    { img: TestImage },
-    { img: TestImage },
-    { img: TestImage },
-    { img: TestImage },
-    { img: TestImage },
-  ];
+  const slides = [{ img: Art1 }, { img: Art2 }, { img: Art1 }, { img: Art2 }];
 
   const teams = [
-    { img: TestImage, description: "This is team" },
-    { img: TestImage, description: "This is team" },
-    { img: TestImage, description: "This is team" },
+    { img: TeamImage1, description: "This is team" },
+    { img: TeamImage2, description: "This is team" },
+    { img: TeamImage3, description: "This is team" },
   ];
 
   const blogs = [
     {
-      img: TestImage,
+      img: BlogImage1,
       title:
         "You Can Buy NFT Crystal Ring and Get a Real Crystal Ring Made of 24-Carat Gold.",
       description:
         "The idea is to highlight the feature and increase activity and interest ...",
     },
     {
-      img: TestImage,
+      img: BlogImage2,
       title:
         "How To Express Your Love this Valentine with this NFT ' Token of Love'",
       description:
         "We are going forward with the theme of Valentine's to create a niche segment NFT and leverage the season.",
     },
     {
-      img: TestImage,
+      img: BlogImage3,
       title:
         "The Perfect NFT Valentine's Day Gifts for the Crypto Enthusiast in Your Life",
       description: "Benefits based post on how to impress your Valentine.",
@@ -83,9 +85,8 @@ const Home = () => {
               direction="row"
               justifyContent="space-between"
               alignItems="center"
-              cssClasses={["section"]}
             >
-              <Box cssClasses={["col-md-7", "col-12"]}>
+              <Box cssClasses={["col-md-6", "col-lg-7", "col-12", "section"]}>
                 <h1>Discover, Collect & Sell unique NFTs</h1>
                 <p className="my-4 hero-text">
                   Safely Invest in High-Class Crystal Ring NFT – our 'Token of
@@ -104,7 +105,22 @@ const Home = () => {
                   </Box>
                 </Flex>
               </Box>
-              <Box cssClasses={["col-md-5", "col-12"]}></Box>
+              <Box
+                cssClasses={[
+                  "col-md-6",
+                  "col-lg-5",
+                  "col-12",
+                  "pb-4",
+                  "pb-md-0",
+                ]}
+              >
+                <Image
+                  cssClasses={["rounded-circle", "logo-img"]}
+                  src={LogoImage}
+                  width="100%"
+                  height="auto"
+                />
+              </Box>
             </Flex>
           </Box>
           {/* <Image
@@ -149,13 +165,7 @@ const Home = () => {
               direction="column"
             >
               <Box
-                cssClasses={[
-                  "col-lg-9",
-                  "col-md-10",
-                  "mt-5",
-                  "pt-5",
-                  "container",
-                ]}
+                cssClasses={["col-lg-9", "col-12", "mt-5", "pt-5", "container"]}
               >
                 <Slider
                   {...{
@@ -176,15 +186,8 @@ const Home = () => {
                     ],
                   }}
                 >
-                  {slides.map((slide, index) => (
-                    <Box key={index} cssClasses={["container"]}>
-                      <Image
-                        src={slide.img}
-                        width="100%"
-                        height="500px"
-                        cssClasses={["rounded"]}
-                      />
-                    </Box>
+                  {slides.map((art, index) => (
+                    <Art art={art} key={index} />
                   ))}
                 </Slider>
                 <Box cssClasses={["mt-4"]}>
@@ -276,7 +279,7 @@ const Home = () => {
           >
             <h1>Meet the Team</h1>
             <Flex
-              cssClasses={["mt-4", "d-none d-md-flex"]}
+              cssClasses={["mt-4", "d-none d-md-flex", "col-12"]}
               justifyContent="between"
               direction="row"
             >
@@ -308,7 +311,7 @@ const Home = () => {
             <h1 className="mt-2 text-center">Blog Posts</h1>
             <Box cssClasses={["mt-4"]}>
               <Box
-                cssClasses={["col-md-11", "d-none", "d-md-block", "mx-auto"]}
+                cssClasses={["col-lg-11", "d-none", "d-md-block", "mx-auto"]}
               >
                 <Flex justifyContent="center" direction="row">
                   {blogs.map((blog, index) => (

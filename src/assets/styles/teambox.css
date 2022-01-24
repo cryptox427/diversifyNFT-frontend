@@ -1,6 +1,6 @@
 .team-box {
   position: relative;
-  padding-bottom: 100px !important;
+  padding-bottom: 80px !important;
 }
 
 .team-description {
@@ -8,4 +8,21 @@
   background: #404040;
   width: 100%;
   min-height: 165px;
+}
+
+.team-img {
+  height: 200px;
+}
+
+.nft-art {
+  background-image: url("../images/nft-overlay.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding-bottom: 50px;
+}
+
+@media (min-width: 992px) {
+  .team-img {
+    height: 250px;
+  }
 }

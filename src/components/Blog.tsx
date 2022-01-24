@@ -11,7 +11,7 @@ const Blog = ({ blog }: { blog: any }) => {
           src={blog.img}
           height="auto"
         />
-        <Box cssClasses={["mt-4"]}>
+        <Box cssClasses={["mt-4", "pt-2"]}>
           <h3>{blog.title}</h3>
         </Box>
         <Box cssClasses={["mt-3"]}>

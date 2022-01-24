@@ -1,6 +1,6 @@
 interface ImageProps {
-  height: string;
-  width: string;
+  height?: string;
+  width?: string;
   cssClasses?: string[];
   styles?: { [key: string]: string };
   handleClick?: () => any;
