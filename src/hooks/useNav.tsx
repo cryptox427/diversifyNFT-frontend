@@ -22,10 +22,10 @@ const useNav = (initialNavbarOpen: boolean) => {
     const header = document.getElementById("header") as HTMLElement;
 
     [].slice
-      .call(header.querySelectorAll("a"))
+      .call(header.querySelectorAll(".nav-animation-link"))
       .forEach((link: HTMLAnchorElement) => {
         link.addEventListener("click", (e) => {
-          // e.preventDefault();
+          e.preventDefault();
 
           setNavbarOpen(false);
         });

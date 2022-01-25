@@ -16,7 +16,7 @@ import BlogImage3 from "../../assets/images/blog3.png";
 import TeamImage1 from "../../assets/images/team1.png";
 import TeamImage2 from "../../assets/images/team2.png";
 import TeamImage3 from "../../assets/images/team3.png";
-import LogoImage from "../../assets/images/logo.png";
+import LogoImage from "../../assets/images/new_logo.png";
 import Art1 from "../../assets/images/art1.png";
 import Art2 from "../../assets/images/art2.png";
 import Art from "../../components/Art";
@@ -80,7 +80,7 @@ const Home = () => {
     <>
       <Box cssClasses={["bg-dark1", "overflow-hidden"]}>
         <div id="home">
-          <Box cssClasses={["container"]}>
+          <Box cssClasses={["container", "pt-4"]}>
             <Flex
               direction="row"
               justifyContent="space-between"
@@ -107,15 +107,15 @@ const Home = () => {
               </Box>
               <Box
                 cssClasses={[
-                  "col-md-6",
-                  "col-lg-5",
+                  "col-md-5",
+                  "col-lg-4",
                   "col-12",
                   "pb-4",
                   "pb-md-0",
                 ]}
               >
                 <Image
-                  cssClasses={["rounded-circle", "logo-img"]}
+                  cssClasses={["logo-img"]}
                   src={LogoImage}
                   width="100%"
                   height="auto"
@@ -338,7 +338,13 @@ const Home = () => {
               </Slider>
             </Box>
             <Box cssClasses={["mt-4", "text-center", "pt-4"]}>
-              <Button secondary text="See More" />
+              <a
+                href="https://diversifynft.medium.com/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <Button secondary text="See More" />
+              </a>
             </Box>
           </div>
         </Box>

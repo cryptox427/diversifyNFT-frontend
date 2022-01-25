@@ -1,5 +1,5 @@
 .navbar {
-  background: var(--background-color-1) !important;
+  background: rgba(16, 16, 19, 0.9) !important;
 }
 
 .nav-item {
@@ -114,6 +114,16 @@
   -moz-transform: rotate(-135deg);
   -o-transform: rotate(-135deg);
   transform: rotate(-135deg);
+}
+
+.navbar-brand > img {
+  width: 50px;
+}
+
+@media (min-width: 992px) {
+  .navbar-brand > img {
+    width: 70px;
+  }
 }
 
 @media (max-width: 991px) {

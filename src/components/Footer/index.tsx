@@ -1,6 +1,6 @@
 import Flex from "../common/Flex";
 import Image from "../common/Image";
-import TestImage from "../../assets/images/Image.png";
+import LogoImage from "../../assets/images/new_logo.png";
 import Box from "../common/Box";
 import TelegramImage from "../../assets/icons/telegram.png";
 import GithubImage from "../../assets/icons/github.png";
@@ -22,13 +22,13 @@ const Footer = () => {
   ];
 
   const socialIcons = [
-    { icon: MediumImage, link: "" },
-    { icon: DiscordImage, link: "" },
-    { icon: TelegramImage, link: "" },
-    { icon: GithubImage, link: "" },
-    { icon: InstagramImage, link: "" },
-    { icon: TwitterImage, link: "" },
-    { icon: FacebookImage, link: "" },
+    { icon: MediumImage, link: "https://diversifynft.medium.com/" },
+    { icon: DiscordImage, link: "https://discord.gg/DvdTthWew8" },
+    { icon: TelegramImage, link: "https://t.me/deviversiynfts" },
+    { icon: GithubImage, link: "https://github.com/DiversifyNFTs" },
+    { icon: InstagramImage, link: "https://www.instagram.com/diversifynft/" },
+    { icon: TwitterImage, link: "https://twitter.com/DiversifyNfts" },
+    { icon: FacebookImage, link: "https://m.facebook.com/diversifynfts" },
   ];
 
   return (
@@ -39,7 +39,7 @@ const Footer = () => {
         justifyContent="center"
         alignItems="center"
       >
-        <Image src={TestImage} width="200px" height="100px" />
+        <Image src={LogoImage} width="100px" />
         <Flex
           direction={"row"}
           justifyContent="center"
@@ -60,8 +60,15 @@ const Footer = () => {
             <SocialIcon key={index} link={icon.link} img={icon.icon} />
           ))}
         </Flex>
-        {/* <a href="mailto:email@diversitynft.io">email@diversitynft.io</a> */}
-        <p className="mt-4 text-sm">email@diversitynft.io</p>
+        <p className="mt-4 text-sm">
+          <a
+            className="text-white"
+            style={{ textDecoration: "none" }}
+            href="mailto:support@diversifynfts.com"
+          >
+            support@diversifynfts.com
+          </a>
+        </p>
       </Flex>
     </Box>
   );

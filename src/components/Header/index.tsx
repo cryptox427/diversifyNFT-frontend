@@ -1,4 +1,6 @@
+import { useLocation } from "react-router-dom";
 import { Link as ScrollLink } from "react-scroll";
+import Logo from "../../assets/images/new_logo.png";
 import TelegramImage from "../../assets/icons/telegram.png";
 import GithubImage from "../../assets/icons/github.png";
 import InstagramImage from "../../assets/icons/instagram.png";
@@ -8,35 +10,38 @@ import SocialIcon from "../common/SocialIcon";
 import useNav from "../../hooks/useNav";
 import { Link } from "react-router-dom";
 import NavbarToggler from "./NavbatToggler";
+import Image from "../common/Image";
 
 const Navbar = () => {
   const navs = [
-    { menu: "Home", link: "home" },
-    { menu: "Roadmap", link: "roadmap" },
-    { menu: "About", link: "about" },
-    { menu: "Blog", link: "blog" },
-    { menu: "Art", link: "art" },
-    { menu: "Faqs", link: "faqs" },
+    { menu: "Home", scrollLink: "home", link: "/" },
+    { menu: "Roadmap", scrollLink: "roadmap", link: "/roadmap" },
+    { menu: "About", scrollLink: "about", link: "/aboutus" },
+    { menu: "Blog", scrollLink: "blog", link: "" },
+    { menu: "Art", scrollLink: "art", link: "" },
+    { menu: "Faqs", scrollLink: "faqs", link: "" },
   ];
 
   const socialIcons = [
-    { icon: TelegramImage, link: "" },
-    { icon: GithubImage, link: "" },
-    { icon: InstagramImage, link: "" },
-    { icon: TwitterImage, link: "" },
-    { icon: FacebookImage, link: "" },
+    { icon: TelegramImage, link: "https://t.me/deviversiynfts" },
+    { icon: GithubImage, link: "https://github.com/DiversifyNFTs" },
+    { icon: InstagramImage, link: "https://www.instagram.com/diversifynft/" },
+    { icon: TwitterImage, link: "https://twitter.com/DiversifyNfts" },
+    { icon: FacebookImage, link: "https://m.facebook.com/diversifynfts" },
   ];
 
   const [navbarOpen] = useNav(false);
+  const location = useLocation();
+  console.log(location);
 
   return (
     <nav
       id="header"
-      className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top"
+      className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top p-0"
     >
-      <div className="container py-1 py-lg-3">
+      <div className="container py-3 py-lg-2">
         <Link to="/" className="navbar-brand pointer">
-          Logo
+          <Image src={Logo} />
         </Link>
         <button
           className="navbar-toggler border-0 outline-none p-0"
@@ -50,14 +55,25 @@ const Navbar = () => {
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             {navs.map((nav, index) => (
               <li key={index} className="nav-item">
-                <ScrollLink
-                  activeClass="active"
-                  className="nav-link white px-0 py-2 pointer"
-                  to={nav.link}
-                  spy={true}
-                >
-                  {nav.menu}
-                </ScrollLink>
+                {location.pathname === "/" ? (
+                  <ScrollLink
+                    activeClass="active"
+                    className="nav-link nav-animation-link white px-0 py-2 pointer"
+                    to={nav.scrollLink}
+                    spy={true}
+                  >
+                    {nav.menu}
+                  </ScrollLink>
+                ) : (
+                  <Link
+                    className={`nav-link white px-0 py-2 pointer ${
+                      location.pathname === nav.link && "active"
+                    }`}
+                    to={nav.link}
+                  >
+                    {nav.menu}
+                  </Link>
+                )}
               </li>
             ))}
           </ul>
