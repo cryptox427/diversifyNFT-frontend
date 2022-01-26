@@ -4,6 +4,7 @@ import { Route, Switch, BrowserRouter as Router } from "react-router-dom";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import Layout from "./components/Layout";
 import "./index.css";
+import "../node_modules/video-react/dist/video-react.css";
 import Home from "./pages/Home";
 import Marketplace from "./pages/Marketplace";
 import About from "./pages/About";

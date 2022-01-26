@@ -17,12 +17,12 @@ import TeamImage1 from "../../assets/images/team1.png";
 import TeamImage2 from "../../assets/images/team2.png";
 import TeamImage3 from "../../assets/images/team3.png";
 import LogoImage from "../../assets/images/new_logo.png";
-import Art1 from "../../assets/images/art1.png";
-import Art2 from "../../assets/images/art2.png";
-import Art from "../../components/Art";
+import VideoPlayer from "../../components/common/VideoPlayer";
+const Video1 = require("../../assets/videos/video1.mp4");
+const Video2 = require("../../assets/videos/video2.mp4");
 
 const Home = () => {
-  const slides = [{ img: Art1 }, { img: Art2 }, { img: Art1 }, { img: Art2 }];
+  const videos = [{ src: Video1 }, { src: Video2 }];
 
   const teams = [
     { img: TeamImage1, description: "This is team" },
@@ -165,7 +165,7 @@ const Home = () => {
               direction="column"
             >
               <Box
-                cssClasses={["col-lg-9", "col-12", "mt-5", "pt-5", "container"]}
+                cssClasses={["col-lg-8", "col-12", "mt-5", "pt-5", "container"]}
               >
                 <Slider
                   {...{
@@ -177,8 +177,8 @@ const Home = () => {
                     prevArrow: <SliderArrow direction="prev" />,
                   }}
                 >
-                  {slides.map((art, index) => (
-                    <Art art={art} key={index} />
+                  {videos.map((video, index) => (
+                    <VideoPlayer key={index} source={video.src} />
                   ))}
                 </Slider>
                 <Box cssClasses={["mt-4"]}>
