@@ -170,20 +170,11 @@ const Home = () => {
                 <Slider
                   {...{
                     infinite: true,
-                    slidesToShow: 2,
+                    slidesToShow: 1,
                     slidesToScroll: 1,
                     arrows: true,
                     nextArrow: <SliderArrow direction="next" />,
                     prevArrow: <SliderArrow direction="prev" />,
-                    responsive: [
-                      {
-                        breakpoint: 768,
-                        settings: {
-                          slidesToShow: 1,
-                          dots: true,
-                        },
-                      },
-                    ],
                   }}
                 >
                   {slides.map((art, index) => (

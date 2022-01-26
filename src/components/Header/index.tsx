@@ -32,7 +32,6 @@ const Navbar = () => {
 
   const [navbarOpen] = useNav(false);
   const location = useLocation();
-  console.log(location);
 
   return (
     <nav
