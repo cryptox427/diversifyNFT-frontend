@@ -10,16 +10,17 @@ const Team = ({ team }: { team: any }) => {
         "container",
         "col-12",
         "team-box-container",
-        "p-lg-4",
+        "p-xl-4",
       ]}
     >
-      <Box cssClasses={["p-4", "rounded-20"]} background="#000">
+      <Box cssClasses={["p-3", "p-xl-4", "rounded-20"]} background="#000">
         <Box cssClasses={["team-box"]}>
           <Flex direction="row" justifyContent="center">
             <Image cssClasses={["p-2", "team-img"]} src={team.img} />
           </Flex>
           <Box cssClasses={["team-description", "rounded-bottom-20", "p-4"]}>
-            {team.description}
+            <Box cssClasses={["py-2", "w-100"]}>Team name: {team.title}</Box>
+            <Box cssClasses={["py-2", "w-100"]}>Position: {team.position}</Box>
           </Box>
         </Box>
       </Box>

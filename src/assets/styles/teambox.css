@@ -1,13 +1,15 @@
 .team-box {
   position: relative;
-  padding-bottom: 80px !important;
 }
 
 .team-description {
-  position: absolute;
   background: #404040;
-  width: 100%;
-  min-height: 165px;
+  display: flex;
+  height: 165px;
+  flex-wrap: wrap;
+  align-content: center;
+  text-transform: uppercase;
+  font-size: 16px;
 }
 
 .team-img {
@@ -24,5 +26,15 @@
 @media (min-width: 992px) {
   .team-img {
     height: 250px;
+  }
+}
+
+@media (min-width: 768px) {
+  .team-description {
+    position: absolute;
+  }
+
+  .team-box {
+    padding-bottom: 80px !important;
   }
 }

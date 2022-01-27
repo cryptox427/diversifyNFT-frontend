@@ -25,9 +25,9 @@ const Home = () => {
   const videos = [{ src: Video1 }, { src: Video2 }];
 
   const teams = [
-    { img: TeamImage1, description: "This is team" },
-    { img: TeamImage2, description: "This is team" },
-    { img: TeamImage3, description: "This is team" },
+    { img: TeamImage1, title: "JOHN DOE", position: " TEAM LEAD" },
+    { img: TeamImage2, title: "JOHN DOE", position: " TEAM LEAD" },
+    { img: TeamImage3, title: "JOHN DOE", position: " TEAM LEAD" },
   ];
 
   const blogs = [
