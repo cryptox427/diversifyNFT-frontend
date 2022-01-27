@@ -1,9 +1,13 @@
 import Box from "./common/Box";
 import Image from "./common/Image";
 
-const Blog = ({ blog }: { blog: any }) => {
+const Blog = ({ blog, index }: { blog: any; index: number }) => {
   return (
-    <Box cssClasses={["col-md-4", "container", "col-12", "mb-4", "mb-sm-0"]}>
+    <div
+      className="col-md-4 container col-12 mb-4 mb-sm-0"
+      data-aos="fade-up"
+      data-aos-duration={800 * index}
+    >
       <Box cssClasses={["p-0", "p-sm-2"]}>
         <Image
           cssClasses={["rounded-20"]}
@@ -18,7 +22,7 @@ const Blog = ({ blog }: { blog: any }) => {
           <p className="text-sm">{blog.description}</p>
         </Box>
       </Box>
-    </Box>
+    </div>
   );
 };
 

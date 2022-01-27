@@ -1,6 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { Route, Switch, BrowserRouter as Router } from "react-router-dom";
+
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import Layout from "./components/Layout";
 import "./index.css";
@@ -9,6 +13,8 @@ import Marketplace from "./pages/Marketplace";
 import About from "./pages/About";
 import Roadmap from "./pages/Roadmap";
 import reportWebVitals from "./reportWebVitals";
+
+AOS.init();
 
 ReactDOM.render(
   <React.StrictMode>

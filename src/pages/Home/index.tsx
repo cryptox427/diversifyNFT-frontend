@@ -87,23 +87,31 @@ const Home = () => {
               alignItems="center"
             >
               <Box cssClasses={["col-md-6", "col-lg-7", "col-12", "section"]}>
-                <h1>Discover, Collect & Sell unique NFTs</h1>
-                <p className="my-4 hero-text">
+                <h1 data-aos="fade-right" data-aos-duration="800">
+                  Discover, Collect & Sell unique NFTs
+                </h1>
+                <p
+                  data-aos="fade-right"
+                  data-aos-duration="1000"
+                  className="my-4 hero-text"
+                >
                   Safely Invest in High-Class Crystal Ring NFT – our 'Token of
                   Love' grows with time. Gift, Invest, Secure – enter the Future
                   of Investment.
                 </p>
-                <Flex
-                  direction="row"
-                  justifyContent="start"
-                  alignItems="center"
-                  cssClasses={["pt-2"]}
-                >
-                  <Button primary text="View on OpeanSea" />
-                  <Box cssClasses={["ms-2", "ms-sm-4"]}>
-                    <Button secondary text="View on Rariable" />
-                  </Box>
-                </Flex>
+                <div data-aos="fade-right" data-aos-duration="1500">
+                  <Flex
+                    direction="row"
+                    justifyContent="start"
+                    alignItems="center"
+                    cssClasses={["pt-2"]}
+                  >
+                    <Button primary text="View on OpeanSea" />
+                    <Box cssClasses={["ms-2", "ms-sm-4"]}>
+                      <Button secondary text="View on Rariable" />
+                    </Box>
+                  </Flex>
+                </div>
               </Box>
               <Box
                 cssClasses={[
@@ -114,12 +122,14 @@ const Home = () => {
                   "pb-md-0",
                 ]}
               >
-                <Image
-                  cssClasses={["logo-img"]}
-                  src={LogoImage}
-                  width="100%"
-                  height="auto"
-                />
+                <div data-aos="flip-up" data-aos-duration="1000">
+                  <Image
+                    cssClasses={["logo-img"]}
+                    src={LogoImage}
+                    width="100%"
+                    height="auto"
+                  />
+                </div>
               </Box>
             </Flex>
           </Box>
@@ -134,9 +144,11 @@ const Home = () => {
       <Box cssClasses={["bg-dark2"]}>
         <div id="art" className="section">
           <Box cssClasses={["container"]}>
-            <h1 className="text-sm-center">What is Diversify NFT</h1>
+            <h1 className="text-sm-center" data-aos="fade-up">
+              What is Diversify NFT
+            </h1>
             <Box cssClasses={["col-md-8", "mt-3", "mx-auto"]}>
-              <p className="text-sm-center">
+              <p className="text-sm-center" data-aos="fade-up">
                 Diversity NFTs is the purest form of Crystal Rings on the
                 metaverse, a brand built as a 'Token of Love' on the Ethereum
                 Network. Diversify NFTs will be the rare jewel in your
@@ -146,11 +158,11 @@ const Home = () => {
                 jewelry on the Web 3.0.
               </p>
             </Box>
-            <h1 className="section-pad-top text-sm-center">
+            <h1 className="section-pad-top text-sm-center" data-aos="fade-up">
               Collection for the Connoisseurs
             </h1>
             <Box cssClasses={["col-md-8", "mt-3", "mx-auto"]}>
-              <p className="text-sm-center">
+              <p className="text-sm-center" data-aos="fade-up">
                 DiversifyNFTs' Crystal Ring Stories are designed to dazzle the
                 special someone. They carry the allure, the exquisiteness, and
                 the magnificence. They are also giving the possibility of a
@@ -167,20 +179,23 @@ const Home = () => {
               <Box
                 cssClasses={["col-lg-8", "col-12", "mt-5", "pt-5", "container"]}
               >
-                <Slider
-                  {...{
-                    infinite: true,
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    arrows: true,
-                    nextArrow: <SliderArrow direction="next" />,
-                    prevArrow: <SliderArrow direction="prev" />,
-                  }}
-                >
-                  {videos.map((video, index) => (
-                    <VideoPlayer key={index} source={video.src} />
-                  ))}
-                </Slider>
+                <div data-aos="zoom-in">
+                  <Slider
+                    {...{
+                      infinite: true,
+                      slidesToShow: 1,
+                      slidesToScroll: 1,
+                      arrows: true,
+                      nextArrow: <SliderArrow direction="next" />,
+                      prevArrow: <SliderArrow direction="prev" />,
+                    }}
+                  >
+                    {videos.map((video, index) => (
+                      <VideoPlayer key={index} source={video.src} />
+                    ))}
+                  </Slider>
+                </div>
+
                 <Box cssClasses={["mt-4"]}>
                   <Flex
                     cssClasses={["pt-4"]}
@@ -188,9 +203,11 @@ const Home = () => {
                     justifyContent="center"
                     alignItems="center"
                   >
-                    <Link to="/marketplace">
-                      <Button secondary text="View Marketplace" />
-                    </Link>
+                    <div data-aos="fade-up">
+                      <Link to="/marketplace">
+                        <Button secondary text="View Marketplace" />
+                      </Link>
+                    </div>
                   </Flex>
                 </Box>
               </Box>
@@ -204,48 +221,54 @@ const Home = () => {
             cssClasses={["container"]}
             justifyContent="center"
             direction="row"
-            alignItems="center"
           >
             <Box cssClasses={["col-md-7", "col-12", "pe-md-4"]}>
-              <h2>Roadmap</h2>
-              <p className="hero-text mt-2">
-                Here’s a breakdown of our achievements, transparency is a major
-                key in our organization.
-              </p>
-              <Box cssClasses={["mt-4"]}>
-                <Link to="/roadmap">
-                  <Button secondary text="View Roadmap" />
-                </Link>
-              </Box>
+              <div data-aos="flip-right" data-aos-duration="1000">
+                <h2>Roadmap</h2>
+                <p className="hero-text mt-2">
+                  Here’s a breakdown of our achievements, transparency is a
+                  major key in our organization.
+                </p>
+                <div className="mt-4">
+                  <Link to="/roadmap">
+                    <Button secondary text="View Roadmap" />
+                  </Link>
+                </div>
+              </div>
             </Box>
-            <Box
-              cssClasses={[
-                "col-md-5",
-                "bg-dark2",
-                "p-4",
-                "col-12",
-                "mt-4",
-                "mt-md-0",
-              ]}
-              styles={{ borderRadius: "20px" }}
+            <div
+              className="col-md-5 col-12 mt-4 mt-md-0"
+              data-aos="flip-left"
+              data-aos-duration="1000"
             >
-              <Box cssClasses={["p-4", "text-center"]}>
-                <Image src={RoadMapImage} width="100%" height="auto" />
-                <h2 className="mt-3">
-                  Our
-                  <br /> Achievements
-                </h2>
+              <Box
+                cssClasses={["bg-dark2", "p-4"]}
+                styles={{ borderRadius: "20px" }}
+              >
+                <Box cssClasses={["p-4", "text-center"]}>
+                  <Image src={RoadMapImage} width="100%" height="auto" />
+                  <h2 className="mt-3">
+                    Our
+                    <br /> Achievements
+                  </h2>
+                </Box>
               </Box>
-            </Box>
+            </div>
           </Flex>
         </div>
         <div className="section-pad-top" id="about">
           <Box cssClasses={["container"]}>
-            <h1 className="text-sm-center">About Us</h1>
+            <h1
+              className="text-sm-center"
+              data-aos="flip-left"
+              data-aos-duration="800"
+            >
+              About Us
+            </h1>
             <Box
               cssClasses={["col-md-10", "text-sm-center", "mt-2", "mx-auto"]}
             >
-              <p>
+              <p data-aos="fade-up">
                 Established in December 2021, Diversify is a team of friendly
                 professionals whose intention is to bring your intentions out of
                 detention. We develop and design your imaginations just as you
@@ -255,11 +278,11 @@ const Home = () => {
               </p>
             </Box>
             <Flex justifyContent="center" direction="row" alignItems="center">
-              <Box cssClasses={["mt-4"]}>
+              <div className="mt-4" data-aos="fade-up">
                 <Link to="/aboutus">
                   <Button secondary text="View More" />
                 </Link>
-              </Box>
+              </div>
             </Flex>
           </Box>
           <Flex
@@ -268,14 +291,16 @@ const Home = () => {
             direction="column"
             alignItems="center"
           >
-            <h1>Meet the Team</h1>
+            <h1 data-aos="flip-right" data-aos-duration="800">
+              Meet the Team
+            </h1>
             <Flex
               cssClasses={["mt-4", "d-none d-md-flex", "col-12"]}
               justifyContent="between"
               direction="row"
             >
               {teams.map((team, index) => (
-                <Team key={index} team={team} />
+                <Team index={index} key={index} team={team} />
               ))}
             </Flex>
             <Box cssClasses={["container", "mt-4", "d-md-none"]}>
@@ -291,7 +316,7 @@ const Home = () => {
                 }}
               >
                 {teams.map((team, index) => (
-                  <Team key={index} team={team} />
+                  <Team index={index} key={index} team={team} />
                 ))}
               </Slider>
             </Box>
@@ -299,14 +324,20 @@ const Home = () => {
         </div>
         <Box cssClasses={["container", "mt-4"]}>
           <div className="section-pad-top" id="blog">
-            <h1 className="mt-2 text-center">Blog Posts</h1>
+            <h1
+              className="mt-2 text-center"
+              data-aos="flip-left"
+              data-aos-duration="800"
+            >
+              Blog Posts
+            </h1>
             <Box cssClasses={["mt-4"]}>
               <Box
                 cssClasses={["col-lg-11", "d-none", "d-md-block", "mx-auto"]}
               >
                 <Flex justifyContent="center" direction="row">
                   {blogs.map((blog, index) => (
-                    <Blog key={index} blog={blog} />
+                    <Blog key={index} index={index} blog={blog} />
                   ))}
                 </Flex>
               </Box>
@@ -324,11 +355,11 @@ const Home = () => {
                 }}
               >
                 {blogs.map((blog, index) => (
-                  <Blog key={index} blog={blog} />
+                  <Blog key={index} index={index} blog={blog} />
                 ))}
               </Slider>
             </Box>
-            <Box cssClasses={["mt-4", "text-center", "pt-4"]}>
+            <div className="mt-4 text-center pt-4" data-aos="fade-up">
               <a
                 href="https://diversifynft.medium.com/"
                 target="_blank"
@@ -336,20 +367,24 @@ const Home = () => {
               >
                 <Button secondary text="See More" />
               </a>
-            </Box>
+            </div>
           </div>
         </Box>
         <Box cssClasses={["container"]}>
           <div className="section-pad-top" id="faqs">
             <Flex direction={"row"} justifyContent="space-between">
               <Box cssClasses={["col-md-5", "col-12"]}>
-                <h2>FAQs</h2>
-                <p>Frequently asked quetions</p>
+                <h2 data-aos="fade-up">FAQs</h2>
+                <p data-aos="fade-up">Frequently asked quetions</p>
               </Box>
               <Box cssClasses={["col-md-7", "col-12", "mt-4", "mt-md-0"]}>
-                <Box cssClasses={["bg-dark2", "rounded-20", "px-2", "px-md-4"]}>
+                <div
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  className="bg-dark2 rounded-20 px-2 px-md-4"
+                >
                   <Accordion data={faqs} />
-                </Box>
+                </div>
               </Box>
             </Flex>
           </div>

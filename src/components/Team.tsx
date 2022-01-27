@@ -2,16 +2,12 @@ import Box from "./common/Box";
 import Flex from "./common/Flex";
 import Image from "./common/Image";
 
-const Team = ({ team }: { team: any }) => {
+const Team = ({ team, index }: { team: any; index: number }) => {
   return (
-    <Box
-      cssClasses={[
-        "col-md-4",
-        "container",
-        "col-12",
-        "team-box-container",
-        "p-xl-4",
-      ]}
+    <div
+      className="col-md-4 container col-12 team-box-container p-xl-4"
+      data-aos="flip-down"
+      data-aos-duration={800 * index}
     >
       <Box cssClasses={["p-3", "p-xl-4", "rounded-20"]} background="#000">
         <Box cssClasses={["team-box"]}>
@@ -24,7 +20,7 @@ const Team = ({ team }: { team: any }) => {
           </Box>
         </Box>
       </Box>
-    </Box>
+    </div>
   );
 };
 
