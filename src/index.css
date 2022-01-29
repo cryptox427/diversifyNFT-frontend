@@ -35,6 +35,7 @@ code {
 
 a {
   text-decoration: none;
+  cursor: pointer;
 }
 
 .bg-dark {
