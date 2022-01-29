@@ -6,7 +6,8 @@ const Blog = ({ blog, index }: { blog: any; index: number }) => {
     <div
       className="col-md-4 container col-12 mb-4 mb-sm-0"
       data-aos="fade-up"
-      data-aos-duration={800 * index}
+      data-aos-delay={100 * (index + 1)}
+      data-aos-duration="800"
     >
       <Box cssClasses={["p-0", "p-sm-2"]}>
         <Image

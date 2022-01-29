@@ -7,7 +7,8 @@ const Team = ({ team, index }: { team: any; index: number }) => {
     <div
       className="col-md-4 container col-12 team-box-container p-xl-4"
       data-aos="flip-down"
-      data-aos-duration={800 * index}
+      data-aos-delay={100 * (index + 1)}
+      data-aos-duration="500"
     >
       <Box cssClasses={["p-3", "p-xl-4", "rounded-20"]} background="#000">
         <Box cssClasses={["team-box"]}>

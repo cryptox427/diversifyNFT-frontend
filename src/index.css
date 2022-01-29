@@ -124,10 +124,21 @@ p.text-sm {
   padding: 50px;
 }
 
+#home {
+  display: flex;
+  align-items: center;
+}
+
 @media (min-width: 768px) {
   .logo-img {
     margin-top: 20px;
     padding: 0;
+  }
+}
+
+@media (min-width: 992px) {
+  #home {
+    height: 100vh;
   }
 }
 

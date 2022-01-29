@@ -87,19 +87,24 @@ const Home = () => {
               alignItems="center"
             >
               <Box cssClasses={["col-md-6", "col-lg-7", "col-12", "section"]}>
-                <h1 data-aos="fade-right" data-aos-duration="800">
+                <h1 data-aos="fade-right" data-aos-duration="500">
                   Discover, Collect & Sell unique NFTs
                 </h1>
                 <p
                   data-aos="fade-right"
-                  data-aos-duration="1000"
+                  data-aos-duration="500"
+                  data-aos-delay="200"
                   className="my-4 hero-text"
                 >
                   Safely Invest in High-Class Crystal Ring NFT – our 'Token of
                   Love' grows with time. Gift, Invest, Secure – enter the Future
                   of Investment.
                 </p>
-                <div data-aos="fade-right" data-aos-duration="1500">
+                <div
+                  data-aos="fade-right"
+                  data-aos-duration="500"
+                  data-aos-delay="400"
+                >
                   <Flex
                     direction="row"
                     justifyContent="start"
@@ -122,7 +127,7 @@ const Home = () => {
                   "pb-md-0",
                 ]}
               >
-                <div data-aos="flip-up" data-aos-duration="1000">
+                <div data-aos="fade-left" data-aos-duration="1000">
                   <Image
                     cssClasses={["logo-img"]}
                     src={LogoImage}
@@ -147,7 +152,7 @@ const Home = () => {
             <h1 className="text-sm-center" data-aos="fade-up">
               What is Diversify NFT
             </h1>
-            <Box cssClasses={["col-md-8", "mt-3", "mx-auto"]}>
+            <Box cssClasses={["col-md-8", "col-xxl-10", "mt-3", "mx-auto"]}>
               <p className="text-sm-center" data-aos="fade-up">
                 Diversity NFTs is the purest form of Crystal Rings on the
                 metaverse, a brand built as a 'Token of Love' on the Ethereum
@@ -161,7 +166,7 @@ const Home = () => {
             <h1 className="section-pad-top text-sm-center" data-aos="fade-up">
               Collection for the Connoisseurs
             </h1>
-            <Box cssClasses={["col-md-8", "mt-3", "mx-auto"]}>
+            <Box cssClasses={["col-md-8", "col-xxl-10", "mt-3", "mx-auto"]}>
               <p className="text-sm-center" data-aos="fade-up">
                 DiversifyNFTs' Crystal Ring Stories are designed to dazzle the
                 special someone. They carry the allure, the exquisiteness, and
@@ -179,7 +184,7 @@ const Home = () => {
               <Box
                 cssClasses={["col-lg-8", "col-12", "mt-5", "pt-5", "container"]}
               >
-                <div data-aos="zoom-in">
+                <div data-aos="zoom-in" data-aos-duration="500">
                   <Slider
                     {...{
                       infinite: true,
@@ -380,7 +385,7 @@ const Home = () => {
               <Box cssClasses={["col-md-7", "col-12", "mt-4", "mt-md-0"]}>
                 <div
                   data-aos="fade-up"
-                  data-aos-duration="1000"
+                  data-aos-delay="200"
                   className="bg-dark2 rounded-20 px-2 px-md-4"
                 >
                   <Accordion data={faqs} />
