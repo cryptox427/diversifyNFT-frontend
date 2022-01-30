@@ -7,7 +7,7 @@ import MuiAccordionSummary, {
   AccordionSummaryProps,
 } from "@mui/material/AccordionSummary";
 import MuiAccordionDetails from "@mui/material/AccordionDetails";
-import Flex from "../Flex";
+import Box from "../Box";
 
 const Accordion = styled((props: AccordionProps) => (
   <MuiAccordion disableGutters elevation={0} square {...props} />
@@ -46,6 +46,7 @@ const AccordionSummary = styled((props: AccordionSummaryProps) => (
 
 const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
   padding: theme.spacing(2),
+  paddingTop: 0,
 }));
 
 const AccordionItem = ({
@@ -70,18 +71,13 @@ const AccordionItem = ({
         aria-controls={`${panel}d-content`}
         id={`${panel}d-header`}
       >
-        <Flex
-          cssClasses={["py-lg-4 py-2"]}
-          direction={"row"}
-          justifyContent="start"
-          alignItems="center"
-        >
+        <Box cssClasses={["py-lg-4 py-2"]}>
           <FiberManualRecordIcon sx={{ color: "white", fontSize: "0.5em" }} />
-          <h3 className="text-white ms-1 ms-md-3">{data.title}</h3>
-        </Flex>
+          <h3 className="text-white ms-1 ms-md-3 d-inline">{data.title}</h3>
+        </Box>
       </AccordionSummary>
       <AccordionDetails>
-        <p className="text-sm text-white">{data.description}</p>
+        <p className="text-sm text-white ps-1 ps-md-4">{data.description}</p>
       </AccordionDetails>
     </Accordion>
   );

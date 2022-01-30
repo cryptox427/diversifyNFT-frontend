@@ -55,24 +55,28 @@ const Home = () => {
 
   const faqs = [
     {
-      title: "Frequently asked quetion 1",
-      description: "This is description of Frequently asked quetion 1",
+      title: "Where  and how can I buy DiversifyNFT?",
+      description:
+        "Our NFTs would be available in our marketplace as well as Opensea/Rarible. You can make purchases there",
     },
     {
-      title: "Frequently asked quetion 2",
-      description: "This is description of Frequently asked quetion 1",
+      title: "How can I get whitelisted?",
+      description:
+        "To get whitelisted, you would have to part of  our Discord community, follow our Twitter and Instagram handles and participate in our giveaways",
     },
     {
-      title: "Frequently asked quetion 3",
-      description: "This is description of Frequently asked quetion 1",
+      title: "When is the Mint Date?",
+      description: "The Mint Date for our NFTs is on 14th of February, 2022.",
     },
     {
-      title: "Frequently asked quetion 4",
-      description: "This is description of Frequently asked quetion 1",
+      title: "What is the Mint Price?",
+      description:
+        "The mint price is set at 0.5 ETH Howeveer, we have giveaway offers that gives a great discount on mint price. See how to get whitelisted to know how to get these offers.",
     },
     {
-      title: "Frequently asked quetion 5",
-      description: "This is description of Frequently asked quetion 1",
+      title: "Which Markets would the NFTs be listed?",
+      description:
+        "The NFTs would be listed on Opeansea, Rarible and all Blockchain marketplaces",
     },
   ];
 
