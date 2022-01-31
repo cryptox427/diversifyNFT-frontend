@@ -75,6 +75,16 @@ const Navbar = () => {
                 )}
               </li>
             ))}
+            <li className="nav-item">
+              <a
+                className="nav-link white px-0 py-2"
+                href="https://tinyurl.com/bddbmfpt"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Litepaper
+              </a>
+            </li>
           </ul>
           <ul className="navbar-nav social-icons">
             {socialIcons.map((icon, index) => (

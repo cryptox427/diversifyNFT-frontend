@@ -10,23 +10,23 @@ const Roadmap = () => {
       items: [
         {
           label: "Complete Smart Contract - NFT721",
-          completed: true,
+          completed: false,
         },
         {
           label: "Twitter/Intsagam/Discord Launch",
-          completed: true,
+          completed: false,
         },
         {
           label: "Launch our general website - V1",
-          completed: true,
+          completed: false,
         },
         {
           label: "Mint First 50 NFTs",
-          completed: true,
+          completed: false,
         },
         {
           label: "Community Giveaways & Contests",
-          completed: true,
+          completed: false,
         },
       ],
     },
@@ -36,23 +36,23 @@ const Roadmap = () => {
       items: [
         {
           label: "Community Event",
-          completed: true,
+          completed: false,
         },
         {
           label: "Upgrade Website V2",
-          completed: true,
+          completed: false,
         },
         {
           label: "Mint 200 NFTs",
-          completed: true,
+          completed: false,
         },
         {
           label: "Announcement",
-          completed: true,
+          completed: false,
         },
         {
           label: "NFT edition Event",
-          completed: true,
+          completed: false,
         },
       ],
     },
@@ -62,7 +62,7 @@ const Roadmap = () => {
       items: [
         {
           label: "Mint 500 NFTs",
-          completed: true,
+          completed: false,
         },
         {
           label: "Upgrade website V3",
