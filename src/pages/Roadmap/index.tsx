@@ -9,23 +9,23 @@ const Roadmap = () => {
       season: "Q2 2021",
       items: [
         {
-          label: "Complete Smart Contract - NFT721",
+          label: "Complete Main Smart Contract - ERC721",
+          completed: true,
+        },
+        {
+          label: "Twitter/Intsagram Launch/Discord Launch",
+          completed: true,
+        },
+        {
+          label: "Launch website V1",
+          completed: true,
+        },
+        {
+          label: "Mint First NFTs",
           completed: false,
         },
         {
-          label: "Twitter/Intsagam/Discord Launch",
-          completed: false,
-        },
-        {
-          label: "Launch our general website - V1",
-          completed: false,
-        },
-        {
-          label: "Mint First 50 NFTs",
-          completed: false,
-        },
-        {
-          label: "Community Giveaways & Contests",
+          label: "Community Giveaways And Contests",
           completed: false,
         },
       ],
@@ -43,7 +43,11 @@ const Roadmap = () => {
           completed: false,
         },
         {
-          label: "Mint 200 NFTs",
+          label: "Mint NFTs",
+          completed: false,
+        },
+        {
+          label: "Launch Item Smart Contract - ERC 721",
           completed: false,
         },
         {
@@ -51,7 +55,7 @@ const Roadmap = () => {
           completed: false,
         },
         {
-          label: "NFT edition Event",
+          label: "NFT Edition",
           completed: false,
         },
       ],
@@ -61,15 +65,19 @@ const Roadmap = () => {
       season: "Q4 2021",
       items: [
         {
-          label: "Mint 500 NFTs",
+          label: "Company Token Launch",
           completed: false,
         },
         {
-          label: "Upgrade website V3",
+          label: "Mint NFTs",
           completed: false,
         },
         {
-          label: "Start Migrating to Polygon",
+          label: "Upgrade Website V3",
+          completed: false,
+        },
+        {
+          label: "Migrate to Polygon",
           completed: false,
         },
         {
@@ -83,15 +91,7 @@ const Roadmap = () => {
       season: "Q1 2022",
       items: [
         {
-          label: "Mint 1000 NFTs",
-          completed: false,
-        },
-        {
-          label: "Token Launch",
-          completed: false,
-        },
-        {
-          label: "Launch Website Marketing Place",
+          label: "Launch Marketing Website",
           completed: false,
         },
         {

@@ -17,6 +17,7 @@ const Button = ({
         <button
           className={"custom-btn primary-btn rounded-pill"}
           onClick={onClick}
+          style={{ ...styles }}
         >
           {text}
         </button>
