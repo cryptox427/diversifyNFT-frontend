@@ -33,23 +33,25 @@ const Home = () => {
   const blogs = [
     {
       img: BlogImage1,
-      title:
-        "You Can Buy NFT Crystal Ring and Get a Real Crystal Ring Made of 24-Carat Gold.",
+      title: "THE INSTABILITY OF CRYPTOCURRENCIES VERSUS THE STABILITY OF NFTs",
       description:
-        "The idea is to highlight the feature and increase activity and interest ...",
+        "The second saga of a trilogy The personal ‘Elixir of Love’ Like the ‘Elixir of Love’, which Valentine left after his execution to make his blind lover see ...",
+      link: "https://diversifynft.medium.com/the-instability-of-cryptocurrencies-versus-the-stability-of-nfts-5ec6b9f07e11",
     },
     {
       img: BlogImage2,
-      title:
-        "How To Express Your Love this Valentine with this NFT ' Token of Love'",
+      title: "OUR STORY — DiversifyNFT",
       description:
-        "We are going forward with the theme of Valentine's to create a niche segment NFT and leverage the season.",
+        "A long time ago, in an era when mankind haven’t attained advanced civilization, mankind discovered a set of strange, strong and shiny crystals and they named these beautiful crystals DIAMONDS (derived ...",
+      link: "https://diversifynft.medium.com/our-story-diversifynft-57ad52b18",
     },
     {
       img: BlogImage3,
       title:
-        "The Perfect NFT Valentine's Day Gifts for the Crypto Enthusiast in Your Life",
-      description: "Benefits based post on how to impress your Valentine.",
+        "Love is Purity: Let’s Celebrate the ‘Elixir of Love’ Collection by DiversifyNFT",
+      description:
+        "The first saga of a TRILOGY! The Sweet Love Story of St Valentine and the Cruelty on Him…. Just like diamonds, love is also about purity and toughness. One such story of toughness and love ...",
+      link: "https://diversifynft.medium.com/love-is-purity-lets-celebrate-the-elixir-of-love-collection-by-diversifynft-236b8d2adbf1",
     },
   ];
 

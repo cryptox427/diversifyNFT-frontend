@@ -23,6 +23,14 @@
   padding-bottom: 50px;
 }
 
+.blog-description {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
 @media (min-width: 992px) {
   .team-img {
     height: 250px;

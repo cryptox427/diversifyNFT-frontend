@@ -10,18 +10,25 @@ const Blog = ({ blog, index }: { blog: any; index: number }) => {
       data-aos-duration="800"
     >
       <Box cssClasses={["p-0", "p-sm-2"]}>
-        <Image
-          cssClasses={["rounded-20"]}
-          width="100%"
-          src={blog.img}
-          height="auto"
-        />
-        <Box cssClasses={["mt-4", "pt-2"]}>
-          <h3>{blog.title}</h3>
-        </Box>
-        <Box cssClasses={["mt-3"]}>
-          <p className="text-sm">{blog.description}</p>
-        </Box>
+        <a
+          href={blog.link}
+          target="_blank"
+          rel="noreferrer"
+          className="text-white"
+        >
+          <Image
+            cssClasses={["rounded-20"]}
+            width="100%"
+            height="80%"
+            src={blog.img}
+          />
+          <Box cssClasses={["mt-4", "pt-2"]}>
+            <h3>{blog.title}</h3>
+          </Box>
+          <Box cssClasses={["mt-3"]}>
+            <p className="text-sm blog-description">{blog.description}</p>
+          </Box>
+        </a>
       </Box>
     </div>
   );
