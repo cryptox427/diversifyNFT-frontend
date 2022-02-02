@@ -25,9 +25,13 @@ const Home = () => {
   const videos = [{ src: Video1 }, { src: Video2 }];
 
   const teams = [
-    { img: TeamImage1, title: "JOHN DOE", position: " TEAM LEAD" },
-    { img: TeamImage2, title: "JOHN DOE", position: " TEAM LEAD" },
-    { img: TeamImage3, title: "JOHN DOE", position: " TEAM LEAD" },
+    {
+      img: TeamImage1,
+      title: "Gregory",
+      position: "Founder, Marketing, Developer",
+    },
+    { img: TeamImage2, title: "Arda", position: "Marketing Manager" },
+    { img: TeamImage3, title: "Ana", position: "Design Leader" },
   ];
 
   const blogs = [
@@ -59,7 +63,7 @@ const Home = () => {
     {
       title: "Where  and how can I buy DiversifyNFT?",
       description:
-        "Our NFTs would be available in our marketplace as well as Opensea/Rarible. You can make purchases there",
+        "Our NFTs would be available in our marketplace as well as Opensea. You can make purchases there",
     },
     {
       title: "How can I get whitelisted?",
@@ -118,9 +122,6 @@ const Home = () => {
                     cssClasses={["pt-2"]}
                   >
                     <Button primary text="View on OpeanSea" />
-                    <Box cssClasses={["ms-2", "ms-sm-4"]}>
-                      <Button secondary text="View on Rariable" />
-                    </Box>
                   </Flex>
                 </div>
               </Box>
