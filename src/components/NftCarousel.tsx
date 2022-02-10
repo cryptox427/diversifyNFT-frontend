@@ -8,7 +8,7 @@ import NFT5 from "../assets/images/nfts/nft5.png";
 import NFT6 from "../assets/images/nfts/nft6.png";
 import NFT7 from "../assets/images/nfts/nft7.png";
 import NFT8 from "../assets/images/nfts/nft8.png";
-import Image from "./common/Image";
+import Art from "./Art";
 
 const NftCarousel = () => {
   const images = [NFT1, NFT2, NFT3, NFT4, NFT5, NFT6, NFT7, NFT8];
@@ -44,7 +44,7 @@ const NftCarousel = () => {
       return (
         <div className={idx === imageIndex ? "activeSlide" : "slide"} key={idx}>
           <div className="slideWrapper">
-            <Image cssClasses={["container"]} src={image} />
+            <Art src={image} />
           </div>
         </div>
       );

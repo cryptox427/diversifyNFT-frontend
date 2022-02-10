@@ -17,12 +17,12 @@ import TeamImage2 from "../../assets/images/team2.png";
 import TeamImage3 from "../../assets/images/team3.png";
 import VideoPlayer from "../../components/common/VideoPlayer";
 import NftCarousel from "../../components/NftCarousel";
-import NftImage from "../../assets/images/nfts/nft7.png";
+import MainCarousel from "../../components/MainCarousel";
 const Video1 = require("../../assets/videos/video1.mp4");
 const Video2 = require("../../assets/videos/video2.mp4");
 
 const Home = () => {
-  const videos = [{ src: Video1 }, { src: Video2 } ];
+  const videos = [{ src: Video1 }, { src: Video2 }];
 
   const teams = [
     {
@@ -135,11 +135,7 @@ const Home = () => {
                     "d-md-block",
                   ]}
                 >
-                  <Image
-                    cssClasses={["rounded", "ps-md-4"]}
-                    width="100%"
-                    src={NftImage}
-                  />
+                  <MainCarousel />
                 </Box>
               </Flex>
               <Box cssClasses={["section-pad-top"]}>

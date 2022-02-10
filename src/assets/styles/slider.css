@@ -36,7 +36,7 @@
 .slide {
   transform: scale(0.7);
   transition: transform 0.5s;
-  opacity: 0.7;
+  opacity: 0.6;
 }
 
 .activeSlide {
