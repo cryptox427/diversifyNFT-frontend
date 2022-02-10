@@ -17,10 +17,10 @@ import Popup from "../Popup";
 const Navbar = () => {
   const navs = [
     { menu: "Home", scrollLink: "home", link: "/" },
+    { menu: "Art", scrollLink: "art", link: "" },
     { menu: "Roadmap", scrollLink: "roadmap", link: "/roadmap" },
     { menu: "About", scrollLink: "about", link: "/aboutus" },
     { menu: "Blog", scrollLink: "blog", link: "" },
-    { menu: "Art", scrollLink: "art", link: "" },
     { menu: "Faqs", scrollLink: "faqs", link: "" },
   ];
 

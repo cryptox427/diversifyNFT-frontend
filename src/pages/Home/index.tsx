@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import Button from "../../components/common/Button";
 import Flex from "../../components/common/Flex";
-// import GroupImage from "../../assets/images/group.png";
 import Image from "../../components/common/Image";
 import Box from "../../components/common/Box";
 import Slider from "react-slick";
@@ -16,13 +15,14 @@ import BlogImage3 from "../../assets/images/blog3.png";
 import TeamImage1 from "../../assets/images/team1.png";
 import TeamImage2 from "../../assets/images/team2.png";
 import TeamImage3 from "../../assets/images/team3.png";
-import LogoImage from "../../assets/images/new_logo.png";
 import VideoPlayer from "../../components/common/VideoPlayer";
+import NftCarousel from "../../components/NftCarousel";
+import NftImage from "../../assets/images/nfts/nft7.png";
 const Video1 = require("../../assets/videos/video1.mp4");
 const Video2 = require("../../assets/videos/video2.mp4");
 
 const Home = () => {
-  const videos = [{ src: Video1 }, { src: Video2 }];
+  const videos = [{ src: Video1 }, { src: Video2 } ];
 
   const teams = [
     {
@@ -90,67 +90,65 @@ const Home = () => {
     <>
       <Box cssClasses={["bg-dark1", "overflow-hidden"]}>
         <div id="home">
-          <Box cssClasses={["container", "pt-4"]}>
-            <Flex
-              direction="row"
-              justifyContent="space-between"
-              alignItems="center"
-            >
-              <Box cssClasses={["col-md-6", "col-lg-7", "col-12", "section"]}>
-                <h1 data-aos="fade-right" data-aos-duration="500">
-                  Discover, Collect & Sell unique NFTs
-                </h1>
-                <p
-                  data-aos="fade-right"
-                  data-aos-duration="500"
-                  data-aos-delay="200"
-                  className="my-4 hero-text"
-                >
-                  Safely Invest in High-Class Crystal Ring NFT – our 'Token of
-                  Love' grows with time. Gift, Invest, Secure – enter the Future
-                  of Investment.
-                </p>
-                <div
-                  data-aos="fade-right"
-                  data-aos-duration="500"
-                  data-aos-delay="400"
-                >
-                  <Flex
-                    direction="row"
-                    justifyContent="start"
-                    alignItems="center"
-                    cssClasses={["pt-2"]}
-                  >
-                    <Button primary text="View on OpeanSea" />
-                  </Flex>
-                </div>
-              </Box>
-              <Box
-                cssClasses={[
-                  "col-md-5",
-                  "col-lg-4",
-                  "col-12",
-                  "pb-4",
-                  "pb-md-0",
-                ]}
+          <Box cssClasses={["container"]}>
+            <Box cssClasses={["section"]}>
+              <Flex
+                direction="row"
+                justifyContent="space-between"
+                alignItems="center"
               >
-                <div data-aos="fade-left" data-aos-duration="1000">
+                <Box cssClasses={["col-md-7", "col-12"]}>
+                  <h1 data-aos="fade-right" data-aos-duration="500">
+                    Discover, Collect & Sell unique NFTs
+                  </h1>
+                  <p
+                    data-aos="fade-right"
+                    data-aos-duration="500"
+                    data-aos-delay="200"
+                    className="my-4 hero-text"
+                  >
+                    Safely Invest in High-Class Crystal Ring NFT – our 'Token of
+                    Love' grows with time. Gift, Invest, Secure – enter the
+                    Future of Investment.
+                  </p>
+                  <div
+                    data-aos="fade-right"
+                    data-aos-duration="500"
+                    data-aos-delay="400"
+                  >
+                    <Flex
+                      direction="row"
+                      justifyContent="start"
+                      alignItems="center"
+                      cssClasses={["pt-2"]}
+                    >
+                      <Button primary text="View on OpeanSea" />
+                    </Flex>
+                  </div>
+                </Box>
+                <Box
+                  cssClasses={[
+                    "col-md-5",
+                    "col-12",
+                    "ps-md-4",
+                    "d-none",
+                    "d-md-block",
+                  ]}
+                >
                   <Image
-                    cssClasses={["logo-img"]}
-                    src={LogoImage}
+                    cssClasses={["rounded", "ps-md-4"]}
                     width="100%"
-                    height="auto"
+                    src={NftImage}
                   />
+                </Box>
+              </Flex>
+              <Box cssClasses={["section-pad-top"]}>
+                <div data-aos="fade-up" data-aos-duration="1000">
+                  <NftCarousel />
                 </div>
               </Box>
-            </Flex>
+            </Box>
           </Box>
-          {/* <Image
-            cssClasses={["d-md-block", "d-none"]}
-            width="auto"
-            height="auto"
-            src={GroupImage}
-          /> */}
         </div>
       </Box>
       <Box cssClasses={["bg-dark2"]}>
