@@ -11,7 +11,7 @@ import Layout from "./components/Layout";
 import "./index.css";
 import Home from "./pages/Home";
 import Marketplace from "./pages/Marketplace";
-import Mint from "./pages/Mint";
+// import Mint from "./pages/Mint";
 import About from "./pages/About";
 import Roadmap from "./pages/Roadmap";
 import reportWebVitals from "./reportWebVitals";
@@ -20,7 +20,7 @@ import getLibrary from './hooks/getLibrary';
 AOS.init();
 
 ReactDOM.render(
-  
+
   <React.StrictMode>
     <Web3ReactProvider getLibrary={getLibrary}>
 
@@ -30,7 +30,7 @@ ReactDOM.render(
           <Route path="/roadmap" component={Roadmap} />
           <Route path="/aboutus" component={About} />
           <Route path="/marketplace" component={Marketplace} />
-          <Route path="/mint" component={Mint} />
+          {/*<Route path="/mint" component={Mint} />*/}
           <Route path="/" component={Home} />
         </Switch>
       </Layout>

@@ -80,14 +80,14 @@ const Navbar = () => {
                   )}
                 </li>
               ))}
-              <li className="nav-item">
-                <Link to={'/mint'}><span
-                    style={{ cursor: "pointer" }}
-                    className="nav-link white px-0 py-2"
-                >
-                  Mint
-                </span></Link>
-              </li>
+              {/*<li className="nav-item">*/}
+              {/*  <Link to={'/mint'}><span*/}
+              {/*      style={{ cursor: "pointer" }}*/}
+              {/*      className="nav-link white px-0 py-2"*/}
+              {/*  >*/}
+              {/*    Mint*/}
+              {/*  </span></Link>*/}
+              {/*</li>*/}
               <li className="nav-item">
                 <span
                   style={{ cursor: "pointer" }}
